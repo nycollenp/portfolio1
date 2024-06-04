@@ -87,13 +87,66 @@ span{
     color: var(--main-color);
 } 
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
 footer {
+    width: 100%;
+    color: var(--text-color);
+}
+
+#footer-content {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-contacts h1 {
+    margin-bottom: 2.10rem;
+}
+
+.footer-list {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+#footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-subscribe p {
+    color: var(--text-color);
+}
+
+#input-group {
+    display: flex;
     align-items: center;
-    padding: 1.2rem;
     background-color: var(--bg-color-01);
+    border-radius: 4px;
+}
+
+#input-group input {
+    all: unset;
+    padding: 0.50rem;
+    width: 100%;
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color-01);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
 
 .social-media img {
@@ -137,7 +190,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 25rem;
+    min-height: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -150,6 +203,7 @@ footer {
     transition: 0.5s ease;
 }
 
+
 .atuaçao-container .atuaçao-box:hover {
     border-color: var(--main-color);
     transform: scale(1.01);
@@ -161,19 +215,24 @@ footer {
 }
 
 .atuaçao-box h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .atuaçao-box p {
-    margin: 0.5rem;
+    margin: 1.5rem;
     letter-spacing: 0.1rem;
     /* quantidade de linhas (...) */
     display: -webkit-box;
-    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: justify;
 }
+
+#mais {
+    display: none;
+}
+
 
 /* BOTAO DAS PAGINAS  */
 .btn {
